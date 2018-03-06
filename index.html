@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Bootstrap Example</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  	<script src='assets/script.js'></script>
+</head>
+
+<header>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<a class="navbar-brand" href="#">V2ray_Configure</a>
+	</nav>
+</header>
+
+<style>
+	.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+	.row.content {height: 450px}
+
+	.sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+</style>
+
+<body>
+	<div class='container-fluid'>
+		<div class='row content'>
+			<div class='col-sm-3 text-center sidenav'>
+				<!-- Selection -->
+				<h3>Selecting</h3>
+
+				<button type='button' class="btn btn-outline-primary">log</button><br/><br/>
+
+				<button type='button' class="btn btn-outline-primary log11">log1</button><br/><br/>
+
+				<button type='button' class="btn btn-outline-primary log22">log2</button><br/><br/>
+
+				<button type='button' class="btn btn-outline-primary">log3</button><br/><br/>
+
+				<button type='button' class="btn btn-outline-primary">log4</button><br/><br/>
+
+				<button type='button' class="btn btn-outline-primary">log5</button><br/><br/>
+			</div>
+
+			<div class='col-sm-4'>
+				<!-- Setiing -->
+				<center><h3>Setting</h3></center>
+				<div class='all'>
+					<div class='log1' style="display:none">
+						<p>For log1</p>
+						<p>For log1</p>
+						<p>For log1</p>
+						<p>For log1</p>
+						<p>For log1</p>
+					</div>
+
+					<div class='log2' style="display:none">
+						<p>For log2</p>
+						<p>For log2</p>
+						<p>For log2</p>
+						<p>For log2</p>
+						<p>For log2</p>
+					</div>
+				</div>
+			</div>
+
+			<div class='col-sm-5'>
+				<!-- Json -->
+				<center><h3>Preview</h3></center>
+			</div>
+		</div>
+	</div>
+</body>
