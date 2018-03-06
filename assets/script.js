@@ -1,16 +1,18 @@
 window.onload = function(){
-	$(".log11").on("click", function(){
-		hide_all();
-		$(".log1").toggle();
+	$(".log").on("click", function(){
+		hide_all_content();
+		console.log("log trigger");
+		$(".log-content").toggle();
 	});
 
-	$(".log22").on("click", function(){
-		hide_all();
-		$(".log2").toggle();
+	$(".routing").on("click", function(){
+		hide_all_content();
+		console.log("routing trigger");
+		$(".routing-content").toggle();
 	});
 }
 
-function hide_all(){
-	$(".log1").hide();
-	$(".log2").hide();
+function hide_all_content(){
+	$(".log-content").hide();
+	$(".routing-content").hide();
 }

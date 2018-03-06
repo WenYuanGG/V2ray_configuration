@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src='assets/script.js'></script>
+</head>
+
+<body>
+
+  <div class="container">
+  <div class="alert alert-warning text-center">
+    <strong>Notice: </strong>This is just for research ! 
+  </div>
+
+    <div class="row">
+      <div class="col-3">
+        <ul style="font-family:monospace;">
+          <li>
+            <a href=# class='log btn btn-secondary'>log</a>
+            <a href=#>[-]</a>
+          </li><br/>
+          <li>
+            <a href=# class='api btn btn-secondary'>api</a>
+            <a href=#>[-]</a>
+          </li><br/>
+          <li>
+            <a href=# class='dns btn btn-secondary'>dns</a>
+            <a href=#>[-]</a>
+          </li><br/>
+          <li>
+            <a href=# class='routing btn btn-secondary'>routing</a>
+            <a href=#>[-]</a>
+          </li><br/>
+          <li>
+            <a href=# class='policy btn btn-secondary'>policy</a>
+            <a href=#>[-]</a>
+          </li><br/>
+          <li>
+            <a href=# class='inbound btn btn-secondary'>inbound</a>
+            </b>
+            <a href=#>[-]</a>
+          </li><br/>
+          <li>
+            <a href=# class='outbound btn btn-secondary'>outbound</a>
+            <a href=#>[-]</a>
+          </li><br/>
+          <li>
+            <a href=# class='inboundDetour btn btn-secondary'>inboundDetour</a>
+            <a href=#>[-]</a>
+          </li><br/>
+          <li>
+            <a href=# class='outboundDetour btn btn-secondary'>outboundDetour</a>
+            <a href=#>[-]</a>
+          </li><br/>
+          <li>
+            <a href=# class='transport btn btn-secondary'>transport</a>
+            <a href=#>[-]</a>
+          </li><br/>
+          <li>
+            <a href=#>[+]</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <form style="display: none" class='log-content'>
+          <div class="form-group">
+            <label>access:</label>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="log_access">
+                <label class="custom-file-label" for="log_access">Choose file...</label>
+                <div class="invalid-feedback">Example invalid custom file feedback</div>
+              </div>
+          </div>
+          <div class="form-group">
+            <label>error:</label>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="log_error">
+              <label class="custom-file-label" for="log_error">Choose file...</label>
+              <div class="invalid-feedback">Example invalid custom file feedback</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>loglevel:</label>
+            <select class="custom-select" id="loglevel">
+              <option value="debug">debug</option>
+              <option value="info">info</option>
+              <option value="warning" selected>warning</option>
+              <option value="error">error</option>
+              <option value="none">none</option>
+            </select>
+          </div>
+        </form>
+
+        <!-- ---------------------------------- -->
+
+        <form id="routing" style='display:none' class='routing-content'>
+          <div class="form-group">
+            <label>strategy:</label>
+            <select class="custom-select" id="strategy">
+              <option value="rules" selected>rules</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>setting:</label>
+            <div class="form-row">
+              <div class="form-group col"></div>
+              <div class="form-group col-11">
+                <div class="form-group">
+                  <label>domainStrategy:</label>
+                  <select class="custom-select" id="domainStrategy">
+                    <option value="AsIs" selected>AsIs</option>
+                    <option value="IPIfNonMatch">IPIfNonMatch</option>
+                    <option value="IPOnDemand">IPOnDemand</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <p>rules:</p>
+                  <ol>
+                    <li>RULE <a href=#>[-]</a></li>
+                    <li>RULE <a href=#>[-]</a></li>
+                  </ol>
+                </div>
+                <div style="background: #ddd">
+                  <div class="form-group">
+                    <select class="custom-select" id="type">
+                      <option value="field" selected>field</option>
+                      <option value="chinaip">chinaip</option>
+                      <option value="chinasites">chinasites</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>outboundTag</label>
+                    <input type="text" class="form-control" id="outboundTag">
+                  </div>
+                  <div class="form-group">
+                    <button class="btn">Add Rule</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <div class="col-3">
+        <code lang="json">{name:'My Tree',children:[{name:'hello'},{name:'wat'},
+          {name:'child folder',children:[{name:'child folder',
+          children:[{name:'hello'},{name:'wat'}]},{name:'hello'},{name:'wat'},
+          {name:'child folder',children:[{name:'hello'},{name:'wat'}]}]}]}</code>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
